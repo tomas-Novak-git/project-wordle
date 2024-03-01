@@ -135,6 +135,32 @@ h1 {
   background-color: var(--color-error);
   border-radius: 8px;
 }
+.instruction-box {
+  display:flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  width: 100%;
+  margin-bottom: -4rem;
+}
+.instruction-line {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.instruct-span {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+.instruct-span.correct{
+  background-color: var(--color-success);
+}
+.instruct-span.incorrect{
+  background-color: var(--color-gray-300);
+}
+.instruct-span.misplaced{
+  background-color: var(--color-warning);
+}
 /*
   Round the corners for the 4 cells at the very corners of
   the game board

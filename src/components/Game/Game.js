@@ -9,7 +9,7 @@ import { NUM_OF_GUESSES_ALLOWED } from '../../constants.js';
 import WonBanner from '../WonBanner/WonBanner.js';
 import LostBanner from '../LostBanner/LostBanner.js';
 import Button from '../Button/Button.js'
-
+import Instructions from '../Instructions/Instructions.js';
 // Pick a random word on every pageload.
 // To make debugging easier, we'll log the solution in the console.
 
@@ -37,6 +37,7 @@ function Game() {
   }
  
   return <>
+  <Instructions/>
       <History guesses={guesses} answer={answer}/>
       <Input handleSubmitGuess={handleSubmitGuess} gameStatus={gameStatus}/>
       {gameStatus ==='won' && (<WonBanner numOfGuesses={guesses.length} />)}
