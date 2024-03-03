@@ -16,7 +16,7 @@ import Instructions from '../Instructions/Instructions.js';
 
 function Game() {
   const [guesses, setGuesses] = React.useState([]);
-  const [gameStatus, setGameStatus] = React.useState('won');
+  const [gameStatus, setGameStatus] = React.useState('running');
   const [answer, setAnswer] = React.useState(sample(WORDS));
 
   const  gameReset = (newAnswer) => {
